@@ -1,0 +1,11 @@
+To delete all running docker container 
+docker container prune
+
+To delete all docker images 
+docker image prune
+
+To delete a specific docker img run below command
+docker rm imgname 
+
+To delete running img of a docker container run below command 
+docker rmi -f imgname 
