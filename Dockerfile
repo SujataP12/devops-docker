@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-# MAINTAINER  Sujata Pati
+#  MAINTAINER  Sujata Pati
 
 # RUN rm /etc/nginx/conf.d/default.conf
 

@@ -7,6 +7,11 @@ docker image prune
 To delete a specific docker img run below command
 docker rm imgname 
 
-
 To delete running img of a docker container run below command 
 docker rmi -f imgname 
+
+
+git clone repo name
+git add .  
+git commit -m "change specific msg";git push
+
