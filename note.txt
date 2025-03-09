@@ -1,7 +1,7 @@
 To delete all running docker container 
 docker container prune
 
-To delete all docker images 
+To delete all docker images  
 docker image prune
 
 To delete a specific docker img run below command
