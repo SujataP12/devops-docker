@@ -1,13 +1,21 @@
-FROM nginx:latest
+FROM nginx:1.25.2
 
-#  MAINTAINER  Sujata Pati
+# Maintainer (optional, but recommended in documentation instead)
+LABEL maintainer="Sujata Pati"
 
-# RUN rm /etc/nginx/conf.d/default.conf
+# Copy Nginx configuration
+COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY nginx.conf /etc/nginx/conf.d/
+# Set working directory to Nginx's default root
+WORKDIR /usr/share/nginx/html
 
-COPY website.html /var/www/html/
+# Copy static files
+COPY index.html .
+COPY styles.css .
+COPY scripts.js .
 
+# Expose port 80
 EXPOSE 80
 
+# Run Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
