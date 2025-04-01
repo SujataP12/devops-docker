@@ -68,9 +68,9 @@ Now, when you **run the container**, it will serve our website using Nginx! 🚀
 
 Happy Learning 😊
 
+----------------------------------------------------------------------
 
-
-##Nginx file explained:
+#Nginx file explained:
 
 Sure! Let's break this **Nginx configuration** into simple parts:  
 
